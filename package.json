@@ -1,7 +1,7 @@
 {
-  "name": "strapi",
+  "name": "work-in-wine-cms",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -11,15 +11,13 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.5.5",
-    "@strapi/plugin-users-permissions": "4.5.5",
-    "@strapi/provider-upload-cloudinary": "4.5.5",
-    "@strapi/strapi": "4.5.5",
+    "@strapi/plugin-i18n": "4.x",
+    "@strapi/plugin-users-permissions": "4.x",
+    "@strapi/provider-upload-cloudinary": "4.x",
+    "@strapi/strapi": "4.x",
     "pg": "8.8.0"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
+  "author": "A Strapi developer",
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
   },
@@ -27,5 +25,14 @@
     "node": ">=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duncan-io/work-in-wine-cms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duncan-io/work-in-wine-cms/issues"
+  },
+  "homepage": "https://github.com/duncan-io/work-in-wine-cms#readme"
 }

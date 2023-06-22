@@ -1,0 +1,133 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appLink": {
+      "type": "string",
+      "required": true
+    },
+    "companyDescription": {
+      "type": "richtext"
+    },
+    "companyHQ": {
+      "type": "string"
+    },
+    "companyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "companyWebsite": {
+      "type": "string"
+    },
+    "jobDescription": {
+      "type": "richtext"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "Remote",
+        "Alabama",
+        "Alaska",
+        "American Samoa (Territory)",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "District of Columbia",
+        "Florida",
+        "Georgia",
+        "Guam (Territory)",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Northern Mariana Islands (Territory)",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Puerto Rico (Territory)",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "U.S. Virgin Islands (Territory)",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
+      ]
+    },
+    "salaryRange": {
+      "type": "string"
+    },
+    "job_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job-category.job-category",
+      "inversedBy": "jobs"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "timeOfPayment": {
+      "type": "enumeration",
+      "enum": [
+        "perHour",
+        "perMonth",
+        "perYear"
+      ]
+    }
+  }
+}
