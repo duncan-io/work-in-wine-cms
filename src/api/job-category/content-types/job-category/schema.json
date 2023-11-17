@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::job.job",
-      "mappedBy": "job_categories"
+      "mappedBy": "jobCategory"
     }
   }
 }

@@ -22,17 +22,6 @@
     "companyHQ": {
       "type": "string"
     },
-    "companyLogo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "companyWebsite": {
       "type": "string"
     },
@@ -107,7 +96,7 @@
     "salaryRange": {
       "type": "string"
     },
-    "job_categories": {
+    "jobCategory": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::job-category.job-category",
@@ -128,6 +117,14 @@
         "perMonth",
         "perYear"
       ]
+    },
+    "jobId": {
+      "type": "uid",
+      "required": true
+    },
+    "companyLogo": {
+      "type": "string",
+      "default": "https://res-console.cloudinary.com/dj6ha8ypp/thumbnails/v1/image/upload/v1684175814/dGh1bWJuYWlsX2dyZWF0X3Jlc2lnbmF0aW9uX2RiZjM2NTZjYzA"
     }
   }
 }
