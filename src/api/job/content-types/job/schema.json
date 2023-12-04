@@ -126,7 +126,7 @@
       "type": "string",
       "default": "https://res-console.cloudinary.com/dj6ha8ypp/thumbnails/v1/image/upload/v1684175814/dGh1bWJuYWlsX2dyZWF0X3Jlc2lnbmF0aW9uX2RiZjM2NTZjYzA"
     },
-    "job_age": {
+    "jobAge": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::job-age.job-age",

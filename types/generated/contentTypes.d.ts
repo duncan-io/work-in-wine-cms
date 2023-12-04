@@ -836,7 +836,7 @@ export interface ApiJobJob extends Schema.CollectionType {
     jobId: Attribute.UID & Attribute.Required;
     companyLogo: Attribute.String &
       Attribute.DefaultTo<'https://res-console.cloudinary.com/dj6ha8ypp/thumbnails/v1/image/upload/v1684175814/dGh1bWJuYWlsX2dyZWF0X3Jlc2lnbmF0aW9uX2RiZjM2NTZjYzA'>;
-    job_age: Attribute.Relation<
+    jobAge: Attribute.Relation<
       'api::job.job',
       'manyToOne',
       'api::job-age.job-age'

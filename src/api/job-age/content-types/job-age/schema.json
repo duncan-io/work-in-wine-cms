@@ -19,7 +19,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::job.job",
-      "mappedBy": "job_age"
+      "mappedBy": "jobAge"
     }
   }
 }
