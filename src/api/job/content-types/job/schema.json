@@ -131,6 +131,15 @@
       "relation": "manyToOne",
       "target": "api::job-age.job-age",
       "inversedBy": "jobs"
+    },
+    "paid": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "stripeId": {
+      "type": "string",
+      "unique": true
     }
   }
 }
