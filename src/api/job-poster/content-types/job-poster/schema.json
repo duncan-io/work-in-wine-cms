@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_posters",
+  "info": {
+    "singularName": "job-poster",
+    "pluralName": "job-posters",
+    "displayName": "Job-Poster"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "posterEmail": {
+      "type": "email",
+      "required": true
+    },
+    "posterTitle": {
+      "type": "string"
+    }
+  }
+}

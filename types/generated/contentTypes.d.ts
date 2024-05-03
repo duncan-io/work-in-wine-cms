@@ -1033,6 +1033,38 @@ export interface ApiJobCategoryJobCategory extends Schema.CollectionType {
   };
 }
 
+export interface ApiJobPosterJobPoster extends Schema.CollectionType {
+  collectionName: 'job_posters';
+  info: {
+    singularName: 'job-poster';
+    pluralName: 'job-posters';
+    displayName: 'Job-Poster';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    firstName: Attribute.String & Attribute.Required;
+    lastName: Attribute.String;
+    posterEmail: Attribute.Email & Attribute.Required;
+    posterTitle: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::job-poster.job-poster',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::job-poster.job-poster',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1056,6 +1088,7 @@ declare module '@strapi/types' {
       'api::job.job': ApiJobJob;
       'api::job-age.job-age': ApiJobAgeJobAge;
       'api::job-category.job-category': ApiJobCategoryJobCategory;
+      'api::job-poster.job-poster': ApiJobPosterJobPoster;
     }
   }
 }
