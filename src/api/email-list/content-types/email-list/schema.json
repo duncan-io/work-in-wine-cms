@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_lists",
+  "info": {
+    "singularName": "email-list",
+    "pluralName": "email-lists",
+    "displayName": "email-list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "job-seeker",
+        "employer"
+      ]
+    }
+  }
+}
